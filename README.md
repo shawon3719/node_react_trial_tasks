@@ -1,4 +1,4 @@
-# task from ideascale
+# task
 
 ## Installation
 
