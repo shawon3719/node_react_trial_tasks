@@ -13,8 +13,6 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
-// routes config
-// import routes from '../../adminRoutes'
 
 import { TheHeaderDropdown }  from './index'
 import { userActions } from "src/_actions";
