@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const userRouter = require("./api/users/user.router");
 const taskRouter = require("./api/task/task.router");
+var cors = require('cors');
 
 
 app.use(cors());

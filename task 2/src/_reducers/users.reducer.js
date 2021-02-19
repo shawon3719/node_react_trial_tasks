@@ -13,6 +13,21 @@ export function users(state = {}, action) {
             return {
                 error: action.error
             };
+		case userConstants.REGISTER_REQUEST:
+            return { 
+                ...state,
+                user: action.error ?
+                    null :
+                    (state.users || []).concat([action.user]),
+                    addOrUpdateStatus: "User has been registered successfully",
+                submitting: true,
+            };
+        case userConstants.REGISTER_SUCCESS:
+            return {
+                    ...state,
+            };
+        case userConstants.REGISTER_FAILURE:
+            return {};
         case userConstants.DELETE_REQUEST:
             // add 'deleting:true' property to user being deleted
             return {

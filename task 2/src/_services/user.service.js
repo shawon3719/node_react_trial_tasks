@@ -56,8 +56,6 @@ function getById(id) {
 }
 
 function register(fullname, email, country, phone, password) {
-
-    alert(fullname);
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -65,8 +63,10 @@ function register(fullname, email, country, phone, password) {
 
         // body: JSON.stringify()
     };
+	
 
-    return fetch(`${apiUrl}users/register`, requestOptions).then(handleResponse);
+
+    return fetch(`${apiUrl}users/create`, requestOptions).then(handleResponse);
 }
 
 function update(user) {

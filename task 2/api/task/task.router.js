@@ -4,7 +4,7 @@ const {
   getTaskInfoById,
   updateTaskInfo,
   deleteTaskInfo
-} = require("./employee.category.controller");
+} = require("./task.controller");
 const router = require("express").Router();
 const { checkToken } = require("../../auth/token_validation");
 const { addTaskValidation } = require("../../validation/task/task.validation");
