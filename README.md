@@ -20,18 +20,6 @@ Then you have to set .env or copy .env.example to .env.
 here the .env setup is built for MAMP server. create a database on the server and import the sql file to the database and then do the follow
 
 
-### Copy and Paste
-
-Copy all your files to your project folder and then,
-
-``` bash
-# go into app's directory
-$ cd my-project
-
-# install app's dependencies
-$ npm install
-```
-
 ## Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
